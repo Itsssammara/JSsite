@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding-left: 20px 
+}
+#right{  
+    text-align: right;
+    padding-right: 170px;
+}
+#middle{
+    text-align: center;
+    margin-bottom: 10%;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    margin-right: 10%;
+}
+#text{
+    text-align: right;
+    padding-right: 170px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    position: static;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+ }
+
