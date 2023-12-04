@@ -7,18 +7,12 @@ a{
     color: black;
     padding-left: 20px 
 }
-#right{  
-    text-align: right;
-    padding-right: 170px;
-}
-#middle{
-    text-align: center;
-    margin-bottom: 10%;
-}
+
 h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h3 {
@@ -28,6 +22,40 @@ h3 {
     text-align: right;
     padding-right: 170px;
 }
+.div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8%;
+}
+.round-image {
+    border-radius: 50%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid orange;
+  }
+  
+  .button1:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+
 .footer {
     background-color: black;
     color: white;
