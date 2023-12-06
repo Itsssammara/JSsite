@@ -70,7 +70,7 @@ h3 {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #d4d4d4;
+    background-color: #f8f8f7;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -102,7 +102,7 @@ textarea {
     height: 150px;
 }
 button[type="submit"] {
-    background-color: rgb(0, 123, 148);
+    background-color: rgb(27, 27, 29);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -132,7 +132,9 @@ table, td, th {
 h1 {
     text-align: center;
 }
-
+#sec3 i {
+    color:#e754d3;
+}
 
   
 
