@@ -67,10 +67,10 @@ h3 {
   
   .container1 {
     position: relative;
-    max-width: 500px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f8f8f7;
+    background-color: #d5d8d8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -136,7 +136,7 @@ h1 {
     color:#e754d3;
 }
 
-  
+
 
 
 .footer {
