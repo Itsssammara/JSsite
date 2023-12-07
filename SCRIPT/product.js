@@ -1,7 +1,8 @@
 let goods =[]
 let main = document.querySelector('main')
 
-let items = JSON.parse(localStorage.getItem('items'))
+// sets the array from local storage to array(items) in code
+art= JSON.parse(localStorage.getItem('art'))
 
 main.innerHTML = items.map(function(item, index){
     return `
