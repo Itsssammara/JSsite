@@ -37,58 +37,34 @@
     <main><h1>Admin</h1>
       <table>
         <tr>
-          <th>Product id</th>
-          <th>Product name</th>
-          <th>image</th>
-          <th>price</th>
-          <th>action</th>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Action</th>
         </tr>
         <tbody admin-table>
 
         </tbody>
         <tr>
           <td>
-            <input type="text" placeholder="number id" id="idNew">
+            <input type="text" placeholder="Number ID" id="idNew">
           </td>
           <td>
-            <input type="text" placeholder="item name" id="newName">
+            <input type="text" placeholder="Item Name" id="newName">
           </td>
           <td>
-            <input type="text" placeholder="art piece" id="newPic">
+            <input type="text" placeholder="Insert Item" id="newPic">
           </td>
           <td>
-            <input type="text" placeholder="product cost" id="newCost">
+            <input type="text" placeholder="Insert Price" id="newCost">
           </td>
-          <td><button><i class="bi bi-pencil-square"></button></i></td>
-          <td><button><i class="bi bi-trash3-fill"></button></i></td>
-          
+          <td><button id="addButton">Add</button></td>
         </tr>
-
-        <!-- Button trigger modal -->
-
-        <center><button id="addButt" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <i class="bi bi-pencil-square"></i>
-          </button></center>
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">fufu</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-           </div>
-          </td>
       </table>
+      <div id="spinner" class="spinner" style="display: none;">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
 </main>
     <div class="footer">
         <p>&copy2023 ArtFlow.All rights reserved.</p>
