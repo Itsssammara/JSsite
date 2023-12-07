@@ -76,8 +76,10 @@ function admin() {
         <td><img src="${
           artpiece.url
         }" style="height: 40px; width:40px"></img></td>
-        <td><button class="delete" data-del' value="${index}">Delete</button></td>
+        <td><button class="delete" data-index="${index}">Delete</button></td>
       `;
+      const deleteBtn = row.querySelector('.delete');
+      deleteBtn.addEventListener('click', () => removeitem(index));
       table.appendChild(row);
     });
   } catch (e) {
@@ -86,7 +88,6 @@ function admin() {
 }
 admin();
 
-
 function removeitem(item) {
   art.splice(item, 1);
   localStorage.setItem("art", JSON.stringify(art));
@@ -94,51 +95,52 @@ function removeitem(item) {
 }
 
 let addBtn = document.getElementById("addButton");
-// function addProduct() {
-//   let id = +document.getElementById("idNew").value;
-//   let name = +document.getElementById("newName").value;
-//   let url = +document.getElementById("newPic").value;
-//   let cost = +document.getElementById("newCost").value;
-//   art.push({ id, name, url, cost });
-//   localStorage.setItem("art", JSON.stringify(art));
-//   row.innerHTML = ''
-//   admin();
-// }
-
-// let id = document.getElementById("idNew").value;
 let changeName = document.getElementById("newName");
 let url = document.getElementById("newPic").value;
 let cost = document.getElementById("newCost").value;
 
-// addBtn.addEventListener("click", funtion(){
-
-// });
 addBtn.addEventListener("click", function(){
-    const newName = changeName.value;
-    const newCost = cost.value;
-    const newUrl = url.value;
-
-
-    const newItem = new Objects(
-        art.length +1,
-        newName,
-        newCost,
-        newUrl
+  const newName = changeName.value;
+  const newCost = cost.value;
+  const newUrl = url.value;
+  
+  
+  const newItem = new Objects(
+    art.length +1,
+    newName,
+    newCost,
+    newUrl
     );
-
+    
     art.push(newItem);
-
+    
     admin();
     items();
-})
+  })
 
-// function UpdateProduct(item) {
-//   try {
-//     this.id = item.id;
-//     this.make = document.querySelector("#admin-make${this.id}").value;
-//     this.spec = document.querySelector("#admin-spec${this.id}").value;
-//   } catch (err) {
-//     alert(err);
-//   }
-// },
-
+  // function UpdateProduct(item) {
+    //   try {
+      //     this.id = item.id;
+      //     this.make = document.querySelector("#admin-make${this.id}").value;
+      //     this.spec = document.querySelector("#admin-spec${this.id}").value;
+      //   } catch (err) {
+        //     alert(err);
+        //   }
+        // },
+        // addBtn.addEventListener("click", funtion(){
+          
+          // });
+          // function addProduct() {
+          //   let id = +document.getElementById("idNew").value;
+          //   let name = +document.getElementById("newName").value;
+          //   let url = +document.getElementById("newPic").value;
+          //   let cost = +document.getElementById("newCost").value;
+          //   art.push({ id, name, url, cost });
+          //   localStorage.setItem("art", JSON.stringify(art));
+          //   row.innerHTML = ''
+          //   admin();
+          // }
+          
+          // let id = document.getElementById("idNew").value;
+        
+        
