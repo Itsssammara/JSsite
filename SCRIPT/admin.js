@@ -10,11 +10,11 @@ function Objects(id, name, description,price,url){
 }
 //items created with constructor functions
 let item1 = new Objects(1, 'vector images', 'Anime girl digital poster', 100.00, 'https://i.postimg.cc/k4kM7fzZ/digital-painting-girl-anime-style-vector-illustration-147933-3842.jpg')
-let item2 = new Objects(1, 'Digital Prints', 'Various car posters', 150.00, 'https://i.postimg.cc/Qd7jqR4y/27b734879d537302413e9ace96a6767a.jpg')
-let item3 = new Objects(1, 'Mixed-media', 'Anime girl digital poster', 400.00, 'https://i.postimg.cc/qRkMmjWH/paint2.jpg')
-let item4 = new Objects(1, 'Acrylic on canvas', 'Asorted paintings', 500.00, 'https://i.postimg.cc/2S75nsX7/paint1.jpg')
-let item5 = new Objects(1, 'Acrylic on canvas', 'Asorted paintings', 600.00, 'hhttps://i.postimg.cc/2S75nsX7/paint1.jpg')
-let item6 = new Objects(1, 'Oil on canvas', 'Asorted paintings', 800.00, 'https://i.postimg.cc/W1ddcW9G/e997518c36681eacffd7bb3fe5894c61.jpg')
+let item2 = new Objects(2, 'Digital Prints', 'Various car posters', 150.00, 'https://i.postimg.cc/Qd7jqR4y/27b734879d537302413e9ace96a6767a.jpg')
+let item3 = new Objects(3, 'Mixed-media', 'Anime girl digital poster', 400.00, 'https://i.postimg.cc/mr7Mrp9M/paint2.jpg')
+let item4 = new Objects(4, 'Acrylic on canvas', 'Asorted paintings', 500.00, 'https://i.postimg.cc/2S75nsX7/paint1.jpg')
+let item5 = new Objects(5, 'Acrylic on canvas', 'Asorted paintings', 600.00, 'https://i.postimg.cc/2S75nsX7/paint1.jpg')
+let item6 = new Objects(6, 'Oil on canvas', 'Asorted paintings', 800.00, 'https://i.postimg.cc/W1ddcW9G/e997518c36681eacffd7bb3fe5894c61.jpg')
 
 //push items into array
 art.push(item1,item2,item3,item4,item5,item6)
