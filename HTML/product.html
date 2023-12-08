@@ -9,110 +9,107 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <!-- code for logo -->
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="https://i.postimg.cc/3J4ZN6vw/medium.png" width="125px">
+            <header>
+                <!-- code for logo -->
+                <div class="container">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="https://i.postimg.cc/3J4ZN6vw/medium.png" width="125px">
+                        </div>
+                    
+                        <!-- navbar -->
+                    <nav>
+                        <div class="navig">
+                            <a href="/index.html">Home</a>
+                            <a href="#">Products</a>
+                            <a href="/HTML/checkout.html">Check Out</a>
+                            <a href="/HTML/about.html">About</a>
+                            <a href="/HTML/admin.html">Admin</a>
+                            <a href="/HTML/contact.html">Contact</a>
+                        </div>
+                        </nav>
                 </div>
-            
-                <!-- navbar -->
-               <nav>
-                <div class="navig">
-                    <a href="/index.html">Home</a>
-                    <a href="#">Products</a>
-                    <a href="/HTML/checkout.html">Check Out</a>
-                    <a href="/HTML/about.html">About</a>
-                    <a href="/HTML/admin.html">Admin</a>
-                    <a href="/HTML/contact.html">Contact</a>
-                </div>
-                </nav>
-        
-        </div>
-    </header>
+            </header>
     <h1>__________________________________________________________</h1><br>
     <h1>Recent Products</h1>
     <input class="input" type="text" id="searchBar" placeholder="Search...">
-    <select id="sortOptions">
-    <option value="cheapest">Cheapest first</option>
-    <option value="expensive">Most expensive first</option>
-    </select>
+    <center><select id="sortOptions">
+    <option value="cheapest">Lowest price</option>
+    <option value="expensive">Highest price</option>
+    </select></center>
     <main class="main">
-
-         <!-- <div>
-            <div class="div">
-                <section id="sec1">
-                    <img class="image" src="https://i.postimg.cc/k4kM7fzZ/digital-painting-girl-anime-style-vector-illustration-147933-3842.jpg"  width="300" height="300">
-                    <h4>Vector images</h4>
-                    <h3>R99.99</h3>
-                    <button class="button button1">Add to Cart</button>
-
-        <div>
-            <div class="div">
-                <section id="sec1">
-                    <img class="image" src="https://i.postimg.cc/k4kM7fzZ/digital-painting-girl-anime-style-vector-illustration-147933-3842.jpg"  width="300" height="300">
-                    <h4>Vector image</h4>
-                    <h3>R99.99</h3>
-                    <button onclick="addToCart()">Add to Cart</button>
-
-                </section>
-    
-                <section id="sec2">
-                    <img class="image" src="https://i.postimg.cc/Qd7jqR4y/27b734879d537302413e9ace96a6767a.jpg"  width="300" height="300">
-                    <h4>Digital Prints</h4>
-                    <h2>R99.99</h2>
-
-                    <button class="button button1">Add to Cart</button>
-
-                    <button onclick="addToCart()">Add to Cart</button>
-
-                </section>
-    
-                <section id="sec3">
-                    <img class="image" src="https://i.postimg.cc/qRkMmjWH/paint2.jpg"  width="300" height="300">
-                    <h4>Mixed-media</h4>
-                    <h2>R600.00</h2>
-
-                    <button class="button button1">Add to Cart</button>
-
-                    <button onclick="addToCart()">Add to Cart</button>
-
-                </section>
-    
-                <section id="sec4">
-                    <img class="image" src="https://i.postimg.cc/3NGtqCsY/d894a98e9d27c43d48976a85e4dec972.jpg" width="300" height="300">
-                    <h4>Acrylic on canvas</h4>
-                    <h2>R500.00</h2>
-
-                    <button class="button button1">Add to Cart</button>
-
-                    <button onclick="addToCart()">Add to Cart</button>
-
-                </section>
-    
-                <section id="sec5">
-                    <img class="image" src="https://i.postimg.cc/2S75nsX7/paint1.jpg" width="300" height="300">
-                    <h4>Acrylic on canvas</h4>
-                    <h2>R500.00</h2>
-
-                    <button class="button button1">Add to Cart</button>
-
-                    <button onclick="addToCart()">Add to Cart</button>
-
-                </section>
-                            
-                <section id="sec6">
-                    <img class="image" src="https://i.postimg.cc/W1ddcW9G/e997518c36681eacffd7bb3fe5894c61.jpg" width="300" height="300">
-                    <h4>Oil on canvas</h4>
-                    <h2>R800.00</h2>
-
-                    <button class="button button1">Add to Cart</button>
-                </section>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body"><center>
+                  <h5 class="card-title">Digital Art</h5><center>
+                  <img src="https://i.postimg.cc/k4kM7fzZ/digital-painting-girl-anime-style-vector-illustration-147933-3842.jpg" width="150"><center>
+                  <p class="card-text">Anime girl vector images.</p></center>
+                  <h2 class="card-text">R60</h2>
+                  <a href="#" id="digitalBtn" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
             </div>
-           
-        </div> -->
-
+            <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body"><center>
+                    <h5 class="card-title">Digital Posters</h5><center>
+                   <img src="https://i.postimg.cc/Qd7jqR4y/27b734879d537302413e9ace96a6767a.jpg" width="150">
+                    <p class="card-text">Various wall posters (size A3).</p></center>
+                    <h2 class="card-text">R150</h2>
+                    <a href="#"id="postBtn"  class="btn btn-primary">Add to cart </a>
+                  </div>
+                </div>
+              </div>
+            </div>        
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body"><center>
+                      <h5 class="card-title">Mixed-media</h5><center>
+                      <img src="https://i.postimg.cc/mr7Mrp9M/paint2.jpg" width="150"><center>
+                      <p class="card-text">Adds a beautiful touch to your bedroom wall (size A2).</p></center>
+                      <h2 class="card-text">R400</h2>
+                      <a href="#" id="mediaBtn" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body"><center>
+                        <h5 class="card-title">Oil on canvas</h5><center>
+                       <img src="https://i.postimg.cc/W1ddcW9G/e997518c36681eacffd7bb3fe5894c61.jpg" width="130">
+                        <p class="card-text">For those who appreciate the traditional arts.</p></center>
+                        <h2 class="card-text">R400</h2>
+                        <a href="#" id="oilBtn" class="btn btn-primary">Add to cart </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <div class="card">
+                        <div class="card-body"><center>
+                          <h5 class="card-title">Polaroid Images</h5><center>
+                          <img src="https://i.postimg.cc/bYmJFhZg/polaroid-imgs.jpg" width="150"><center>
+                          <p class="card-text">Mini acrylic and watercolor based paintings.</p></center>
+                          <h2 class="card-text">R50</h2>
+                          <a href="#" id="polaroidBtn" class="btn btn-primary">Add to cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body"><center>
+                            <h5 class="card-title">Acrylic on canvas</h5><center>
+                           <img src="https://i.postimg.cc/2S75nsX7/paint1.jpg" width="150">
+                            <p class="card-text">Custom paintings at affordable prices (sizes A3, A2, A4).</p></center>
+                            <h2 class="card-text">R300</h2>
+                            <a href="#" id="canvasBtn" class="btn btn-primary">Add to cart </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
     </main>
     <div class="footer">
         <p>&copy2023 ArtFlow.All rights reserved.</p>
