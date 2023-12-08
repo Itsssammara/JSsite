@@ -6,7 +6,7 @@ function Objects(id, name, description, price, url) {
   this.price = price;
   this.url = url;
 }
-
+//create an empty array
 let art = [];
 
 //items created with constructor functions
@@ -118,29 +118,6 @@ addBtn.addEventListener("click", function(){
     items();
   })
 
-  // function UpdateProduct(item) {
-    //   try {
-      //     this.id = item.id;
-      //     this.make = document.querySelector("#admin-make${this.id}").value;
-      //     this.spec = document.querySelector("#admin-spec${this.id}").value;
-      //   } catch (err) {
-        //     alert(err);
-        //   }
-        // },
-        // addBtn.addEventListener("click", funtion(){
-          
-          // });
-          // function addProduct() {
-          //   let id = +document.getElementById("idNew").value;
-          //   let name = +document.getElementById("newName").value;
-          //   let url = +document.getElementById("newPic").value;
-          //   let cost = +document.getElementById("newCost").value;
-          //   art.push({ id, name, url, cost });
-          //   localStorage.setItem("art", JSON.stringify(art));
-          //   row.innerHTML = ''
-          //   admin();
-          // }
-          
-          // let id = document.getElementById("idNew").value;
+
         
         
