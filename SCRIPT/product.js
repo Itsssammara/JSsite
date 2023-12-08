@@ -21,7 +21,7 @@ function add(index){
     localStorage.setItem('cart', JSON.stringify(cart))
 }
 
-// Event listener for add to cart button
+// add an Event listener for add to cart button
 main.addEventListener('click', function(event){
     if(event.target.hasAttribute('data-add')){
         add(event.target.value)
