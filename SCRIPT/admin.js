@@ -62,7 +62,7 @@ function items() {
 }
 
 let table = document.querySelector("[admin-table]");
-
+//try and catch used for errors
 function admin() {
   table.innerHTML = "";
   try {
