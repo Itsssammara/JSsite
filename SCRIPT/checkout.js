@@ -1,6 +1,6 @@
+//gets the products from localstorage
 let cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
 let cartTable = document.getElementById('cartTable')
-
 cartTable.innerHTML = cart.map(function(item, index){
     return `
      <tr>
@@ -15,16 +15,10 @@ cartTable.innerHTML = cart.map(function(item, index){
      </tr>`;
 }).join('')
 
-cartTable.addEventListener('input', function(event){ 
-    if(event.target.classList.contains('quantity-input')){
-        // Pass both the index and quantity to the handlePayment function
-        handlePayment(event.target.dataset.index, event.target.value);
-        calculateTotalAmount(); // calling function to update amount
-    }
-});
 
-// Event listener for the "Pay" button
-payButton.addEventListener('click', function() {
-    alert('Payment completed. Thank you for your purchase!');
+
+// Event listener for the "buy" button
+buyButton.addEventListener('click', function() {
+    alert('Thank you for your purchase! See you next time!');
     clearCheckoutPage();
 });

@@ -1,4 +1,4 @@
-//constructor function
+//constructor function that creates an item
 function Objects(id, name, description, price, url) {
   this.id = id;
   this.name = name;
@@ -6,7 +6,7 @@ function Objects(id, name, description, price, url) {
   this.price = price;
   this.url = url;
 }
-//create an empty array
+//create an empty array to store products
 let art = [];
 
 //items created with constructor functions
@@ -53,11 +53,11 @@ let item6 = new Objects(
   "https://i.postimg.cc/W1ddcW9G/e997518c36681eacffd7bb3fe5894c61.jpg"
 );
 
-//push items into array
+//putting items into an array
 art.push(item1, item2, item3, item4, item5, item6);
 
 function items() {
-  //sets array to local storage
+//sets the array to local storage
   localStorage.setItem("art", JSON.stringify(art));
 }
 
@@ -88,6 +88,7 @@ function admin() {
 }
 admin();
 
+//function to remove an item 
 function removeitem(item) {
   art.splice(item, 1);
   localStorage.setItem("art", JSON.stringify(art));
@@ -99,19 +100,20 @@ let changeName = document.getElementById("newName");
 let url = document.getElementById("newPic").value;
 let cost = document.getElementById("newCost").value;
 
+//Event Listener for the "add" button of admin page
 addBtn.addEventListener("click", function(){
   const newName = changeName.value;
   const newCost = cost.value;
   const newUrl = url.value;
   
-  
+//adds a new item
   const newItem = new Objects(
     art.length +1,
     newName,
     newCost,
     newUrl
     );
-    
+//putting the new item into the array
     art.push(newItem);
     
     admin();

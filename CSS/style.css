@@ -154,5 +154,35 @@ h1 {
     bottom: 0;
  }
 
+ /* Responsiveness to phone */
+@media only screen and (max-width: 600px) {
+    th, td {
+        padding: 8px;
+    }
+
+    td img {
+        max-width: 80px;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        text-align: center; 
+    }
+
+    .logo {
+        width: 100%; 
+    }
+    nav{
+        text-align: center;
+    }
+}
 
 
