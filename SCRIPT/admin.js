@@ -27,7 +27,7 @@ let item2 = new Objects(
 let item3 = new Objects(
   3,
   "Mixed-media",
-  "Adds a beautiful touch to your bedroom wall (size A2).",
+  "To add a beautiful touch to your bedroom wall (size A2).",
   400.0,
   "https://i.postimg.cc/mr7Mrp9M/paint2.jpg"
 );
@@ -48,7 +48,7 @@ let item5 = new Objects(
 let item6 = new Objects(
   6,
   "Oil on canvas",
-  "For those who appreciate the traditional arts.",
+  "For the traditional art lovers.",
   400.0,
   "https://i.postimg.cc/W1ddcW9G/e997518c36681eacffd7bb3fe5894c61.jpg"
 );
@@ -57,7 +57,7 @@ let item6 = new Objects(
 art.push(item1, item2, item3, item4, item5, item6);
 
 function items() {
-//sets the array to local storage
+  //sets the array to local storage
   localStorage.setItem("art", JSON.stringify(art));
 }
 
@@ -73,13 +73,11 @@ function admin() {
         <td>${artpiece.name}</td>
         <td>${artpiece.description}</td>
         <td>R${artpiece.price}</td>
-        <td><img src="${
-          artpiece.url
-        }" style="height: 40px; width:40px"></img></td>
+        <td><img src="${artpiece.url}" style="height: 40px; width:40px"></img></td>
         <td><button class="delete" data-index="${index}">Delete</button></td>
       `;
-      const deleteBtn = row.querySelector('.delete');
-      deleteBtn.addEventListener('click', () => removeitem(index));
+      const deleteBtn = row.querySelector(".delete");
+      deleteBtn.addEventListener("click", () => removeitem(index));
       table.appendChild(row);
     });
   } catch (e) {
@@ -88,7 +86,7 @@ function admin() {
 }
 admin();
 
-//function to remove an item 
+//function to remove an item
 function removeitem(item) {
   art.splice(item, 1);
   localStorage.setItem("art", JSON.stringify(art));
@@ -101,25 +99,16 @@ let url = document.getElementById("newPic").value;
 let cost = document.getElementById("newCost").value;
 
 //Event Listener for the "add" button of admin page
-addBtn.addEventListener("click", function(){
+addBtn.addEventListener("click", function () {
   const newName = changeName.value;
   const newCost = cost.value;
   const newUrl = url.value;
-  
-//adds a new item
-  const newItem = new Objects(
-    art.length +1,
-    newName,
-    newCost,
-    newUrl
-    );
-//putting the new item into the array
-    art.push(newItem);
-    
-    admin();
-    items();
-  })
 
+  //adds a new item
+  const newItem = new Objects(art.length + 1, newName, newCost, newUrl);
+  //putting the new item into the array
+  art.push(newItem);
 
-        
-        
+  admin();
+  items();
+});
