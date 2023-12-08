@@ -145,8 +145,8 @@ h1 {
 /* footer */
 .footer {
     margin-top: 5%;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
     position: static;
     text-align: center;
     width: 100%;
